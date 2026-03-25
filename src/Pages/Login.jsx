@@ -70,14 +70,13 @@ function Login() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-
         <button
           type="submit"
           disabled={!isFormFilled}
           className={`w-full mt-2 py-3.5 rounded-md font-semibold text-[15px] transition-colors ${
             isFormFilled
               ? "bg-popx-purple text-white hover:bg-purple-700"
-              : "bg-#CBC3E3 text-white cursor-not-allowed"
+              : "bg-[#CBC3E3] text-white cursor-not-allowed"
           }`}
         >
           Login
